@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'; // Or 'chai' and 'mocha'
 import { PageFactory } from '../utils/pageFactory';
 import users from '../data/users.json';
 import products from '../data/products.json';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../pages/loginPage';
 import { InventoryPage } from '../pages/inventoryPage';
 import { ProductDetailPage } from '../pages/productDetailPage';
 import { logger } from '../utils/logging';

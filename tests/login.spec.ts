@@ -3,7 +3,7 @@ import { PageFactory } from '../utils/pageFactory';
 import users from '../data/users.json';
 import { logger } from '../utils/logging';
 import BrowserContext from '../utils/browserContext';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../pages/loginPage';
 
 let loginPage: LoginPage;
 

@@ -4,7 +4,7 @@ import users from '../data/users.json';
 import products from '../data/products.json';
 import { logger } from '../utils/logging';
 import BrowserContext from '../utils/browserContext';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../pages/loginPage';
 import { InventoryPage } from '../pages/inventoryPage';
 
 let loginPage: LoginPage;
