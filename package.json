@@ -1,0 +1,24 @@
+{
+  "name": "generic-ui-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:ci": "npx playwright test --project=chromium",
+    "test:headed": "npx playwright test --headed",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:iphone14": "npx playwright test --project=iphone14",
+    "test:fullparallel": "npx playwright test --workers=$(node -e \"console.log(require('os').cpus().length)\")"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
+  }
+}
