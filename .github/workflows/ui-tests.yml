@@ -41,7 +41,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-          
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+           
       - name: Run UI Tests and Generate Allure Results
         # This assumes your package.json has a script like "test:ui:users": "npx playwright test tests/userUi.spec.ts tests/registerUi.spec.ts"
         # And that playwright.config.ts has Allure reporter configured
